@@ -85,6 +85,12 @@ function playGame(){
 
         playRound(humanSelection, computerSelection);
     }
+
+    if (computerScore > humanScore){
+        console.log("You lost. The score is Computer: " + computerScore + ", Human: " + humanScore + ".");
+    } else {
+        console.log("You won! The score is Computer: " + computerScore + ", Human: " + humanScore + ".")
+    }
 }
 
 playGame();
